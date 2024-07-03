@@ -35,11 +35,12 @@ const App = () => {
 
   const a = 20;
   const b = 40;
-
-
+  const friends = [
+    { name: "Peter", age: 4 },
+    { name: "Maya", age: 10 },
+  ];
 
   return (
-
     <div>
       <h1>Greetings</h1>
       <Hello name="Glenn" age={20 + 3} />
@@ -50,6 +51,16 @@ const App = () => {
       </p>
 
       <Description des={des}></Description>
+
+      <div>
+
+        <p>
+          {friends[0].name} {friends[0].age}
+        </p>
+        <p>
+          {friends[1].name} {friends[1].age}
+        </p>
+      </div>
     </div>
   );
 };
